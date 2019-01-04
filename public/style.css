@@ -9530,11 +9530,17 @@ h1 {
   font-family: "Courgette", cursive;
 }
 
+body {
+  background: url("../images/main_bg.jpg");
+}
+
 header {
   background-image: url("../images/banner1.jpg");
-  height: 600px;
+  height: 700px;
   width: 100%;
   background-size: cover;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 nav a {
@@ -9543,14 +9549,50 @@ nav a {
   font-size: 15px;
 }
 
-section {
+#banner {
   background-color: rgba(0, 0, 0, 0.8);
-  height: 600px;
+  height: 700px;
   width: 100%;
 }
 
 .t-grand {
   font-size: 55px;
+}
+
+#deco {
+  background-image: url("../images/bottom_decoration_img.png");
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 10px;
+  width: 100%;
+}
+
+#border-bordeau {
+  border-right: 5px solid #a02;
+}
+
+.menu .container {
+  background-color: #fff;
+}
+.menu .rounded-circle {
+  border: 3px solid #aaa;
+  width: 70px;
+  height: 70px;
+}
+.menu p {
+  font-size: 12px;
+}
+.menu h6 {
+  font-size: 12px;
+  font-weight: 750;
+}
+.menu h3 {
+  font-family: "Courgette", cursive;
+}
+
+.col-8 {
+  border-bottom: 1px dotted #aaa;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
