@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"> -->
-    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"> -->
-    <link rel="stylesheet" href="./public/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./public/style.css">
     <title>leschefs</title>
     <style>
 
     </style>
 </head>
 <body>
-    <header>
-        <section class="banner">
+
+ <header>
+   <section class="banner">
       <div class="container ">
         <div class="row ">
          <div class="col pt-5">
@@ -25,19 +28,19 @@
                <span class="navbar-toggler-icon"></span>
              </button>
                 <!-- la nav a gauche -->
-             <div class="collapse navbar-collapse border-top border-bottom border-light ml-5" id="navbarSupportedContent">
-               <ul class="nav nav-pills">
+             <div class="collapse navbar-collapse border-top border-bottom border-light" id="navbarSupportedContent">
+               <ul class="nav nav-pills text-center">
                    <li class="nav-item">
                      <a class="nav-link active rounded-0 bg-danger" href="#">home</a>
                    </li>
                    <li class="nav-item">
-                     <a class="nav-link pl-4 ml-3" href="#">about us</a>
+                     <a class="nav-link  ml-3 rounded-0" href="#">about us</a>
                    </li>
                    <li class="nav-item">
-                     <a class="nav-link pl-4 ml-3" href="#">menu list</a>
+                     <a class="nav-link  ml-3 rounded-0" href="#">menu list</a>
                    </li>
                    <li class="nav-item">
-                     <a class="nav-link pl-4 ml-3" href="#">team</a>
+                     <a class="nav-link  ml-3 rounded-0" href="#">team</a>
                    </li>
                  </ul>
                 </div>
@@ -52,171 +55,257 @@
               <nav class="navbar navbar-expand-lg navbar-light">
                <div class="collapse navbar-collapse border-top border-bottom border-light mr-5" id="navbarSupportedContent">
   
-               <ul class="navbar-nav">
-                 <li class="nav-item active">
-                   <a class="nav-link text-light" href="#">reservation <span class="sr-only">(current)</span></a>
-                 </li>
-                 <li class="nav-item">
-                    <a class="nav-link pl-4 text-light" href="#">blog</a>
-                 </li>
-                 <li class="nav-item">
-                    <a class="nav-link px-4 text-light" href="#">testmonial</a>
-                 </li>
-                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#">contact us</a>
-                 </li>
-               </ul>
+                <ul class="navbar-nav text-center">
+                  <li class="nav-item active">
+                    <a class="nav-link text-light px-1" href="#">reservation <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link pl-2 ml-2 text-light" href="#">blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link pl-2 mx-2 text-light" href="#">testmonial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light px-0" href="#">contact us</a>
+                  </li>
+                </ul>
                </div>
               </nav>
             </div>
          </div>
         </div>
         <!-- fin de row pour nav -->
-     <div class="container  text-light text-center justify-content-center p-5 mt-5 ">
-        <div>
-            <h1 class="mt-4 pt-4 mx-5">Whatever your <span class="t-grand text-uppercase">occasion, <br></span><span class="t-grand text-uppercase text-danger"> taste</span><span class="t-grand"> make</span> it one <br> to <span class="t-grand">remember !</span></a></h1>
+        <!-- la carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators pt-5">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="container w-50 text-light text-center justify-content-center py-5 mt-5 ">
+                    <div>
+                       <h1 class="mt-4 pt-4 mx-5">Whatever your 
+                         <span class="t-grand text-uppercase">occasion, </span><span class="t-grand text-uppercase text-danger"> taste</span>
+                         <span class="t-grand"> make</span> it one  to 
+                         <span class="t-grand">remember !</span>
+                       </h1>
+                    </div>
+                    <div class="py-4">
+                        <a href=""><span class="badge badge-light px-4 py-3 rounded-pill"> purchase theme</span></a>
+                        <a href=""><span class="badge badge-danger px-4 py-3 rounded-pill">learn more</span></a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="carousel-item">
+                  <div class="container w-50 text-light text-center justify-content-center py-5 mt-5 ">
+                      <div>
+                          <h1 class="mt-4 pt-4 mx-5">Whatever your <span class="t-grand text-uppercase">occasion, </span><span class="t-grand text-uppercase text-danger"> taste</span><span class="t-grand"> make</span> it one to <span class="t-grand">remember !</span></a></h1>
+                      </div>
+                      <div class="py-4">
+                        <a href=""><span class="badge badge-light px-4 py-3 rounded-pill"> purchase theme</span></a>
+                        <a href=""><span class="badge badge-danger px-4 py-3 rounded-pill">learn more</span></a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="carousel-item">
+                  <div class="container w-50 text-light text-center justify-content-center py-5 mt-5 ">
+                      <div>
+                          <h1 class="mt-4 pt-4 mx-5">Whatever your <span class="t-grand text-uppercase">occasion, </span><span class="t-grand text-uppercase text-danger"> taste</span><span class="t-grand"> make</span> it one to <span class="t-grand">remember !</span></a></h1>
+                      </div>
+                      <div class="py-4 ">
+                        <a href=""><span class="badge badge-light px-4 py-3 rounded-pill"> purchase theme</span></a>
+                        <a href=""><span class="badge badge-danger px-4 py-3 rounded-pill">learn more</span></a>
+                      </div>
+                  </div>
+              </div>
+            </div>
         </div>
-        <div class="py-4">
-          <a href=""><span class="badge badge-light px-4 py-3 rounded-pill"> purchase theme</span></a>
-          <a href=""><span class="badge badge-danger px-4 py-3 rounded-pill">learn more</span></a>
-        </div>
-    </div>
+
    </section> 
+   <div id="deco" class=""></div>
  </header>
- <div id="deco" class=""></div>
 <!-- fin de header  -->
 
 <!-- permiere section -->
 <section class="menu">
   <div class="container w-75 px-0 mt-5 border">
+
     <div class="row">
-      <div class="col-4 text-left"><img src="./images/box-left-top.png" alt=""></div>
+      <div class="col-4 text-left">
+        <img src="./images/box-left-top.png" alt="">
+      </div>
       <div class="col-4 pt-5">
          <h1 class="text-center pb-0 mb-0"><span class="t-grand text-uppercase text-danger">our </span >Story</h1>
          <img class="text-center w-100 " src="./images/decoration_line.png" alt="">
       </div>
-      <div class="col-4 text-right"><img src="./images/box-right-top.png" alt=""></div>
+      <div class="col-4 text-right">
+        <img src="./images/box-right-top.png" alt="">
+      </div>
     </div>
                                  <!-- le milieu simple sans row  -->
     <div class="container w-50">
-        <p class="text-center pt-3 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum earum placeat dolores repudiandae unde odit omnis adipisci! Ducimus ea eaque perferendis, ab in ut beatae, laudantium labore illum quo voluptatibus?</p>
+        <p class="text-center pt-3 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum earum placeat dolores repudiandae unde odit omnis adipisci! Ducimus ea eaque perferendis, ab in ut beatae, laudantium labore illum quo voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eaque est reiciendis libero cupiditate vel alias id aliquam. Dolor, alias quibusdam. Quisquam alias sit cumque sed! Doloremque architecto quasi veniam.Aspernatur repudiandae quas deserunt ratione omnis, nulla inventore ex corrupti voluptates adipisci odit vel culpa praesentium eveniet! Quas nam labore facere magni. Rem eaque quam!</p>
         <h1 class="text-center pt-5 mt-5 pb-0 mb-0"><span class="t-grand text-uppercase text-danger">our </span>Menu List </h1>
         <img class="text-center w-100" src="./images/decoration_line.png" alt="">
     </div>
                                   <!-- le centre menu avec col  -->
     <div class="container">
       <div class="row pt-5 mt-5">
-        <div class="col-2 pr-0 border-right">
-           <div id="border-bordeau" class="text-center">
-             <span class="text-danger"><i class="fas fa-mug-hot fa-3x"></i></span>
-             <h3  class="border-bottom p-3">BreakFast</h3>
-           </div>
-           <div class="text-center">
-              <i class="fas fa-flask fa-3x text-secondary"></i>
-             <h3 class="border-bottom p-3">Lunch</h3>
-           </div>
-           <div class="text-center">
-             <i class="fas fa-concierge-bell fa-3x text-secondary"></i>
-             <h3 class="border-bottom p-3">Snack</h3>
-           </div>
-           <div class="text-center">
-             <div><i class="fas fa-mug-hot fa-3x text-secondary"></i></div>
-             <h3 class="border-bottom p-3 ">Dinner</h3>
-           </div>
-        </div>
 
-         
-        <div class="col">
-           <div class="row m-1 align-items-center">
-              
-                 <div class="col-2 px-0">
+        <div class="col-12 col-md-2 pr-0 border-right">
+         <div class="list-group" id="list-tab" role="tablist">
+
+              <a class="list-group-item list-group-item-action active px-0" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
+                <div id="border-bordeau" class="text-center">
+                  <i class="fas fa-mug-hot fa-3x py-2"></i>
+                  <h3  class="px-2 pb-0">BreakFast</h3>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                <div class="text-center">
+                  <i class="fas fa-flask fa-3x py-2"></i>
+                  <h3 class="px-2 pb-0">Lunch</h3>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
+                 <div class="text-center">
+                  <i class="fas fa-concierge-bell fa-3x py-2"></i>
+                  <h3 class="px-2 pb-0">Snack</h3>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
+                <div class="text-center">
+                <i class="fas fa-mug-hot fa-3x py-2"></i>
+                <h3 class="px-2 pb-0">Dinner</h3>
+                </div>
+              </a>
+          </div>
+           <!-- fin de list groupe -->
+        </div>
+          <!-- fin de col-2 -->
+          <!-- les col de milieu -->
+        <div class="col-md-5 col-12 mx-0 px-0 pl-1">
+           <div class="row mx-0 align-items-center">
+               
+                 <div class="col-md-2 col-12 px-0">
                     <img class="rounded-circle mb-2" src="./images/menu_image_1.jpg">
                  </div>
-                 <div class="col-8 ">
+                 <div class="col-md-8 col-12 ">
                     <h6>Deer Steak with Potatoes</h6>
                     <p>Welcome to Risotto restaurant website. Here we try to share our</p>
                  </div>
-                 <div class="col-2 px-0"><p class="alert alert-secondary p-1 mx-0">$25</p></div>
-              
+                 <div class="col-md-2 col-12 px-0">
+                   <span class="alert alert-secondary text-danger text-center prix-menu px-3 py-1 p-1 mx-0">$25</span>
+                 </div>          
 
-                <div class="col-2 px-0">
+                 <div class="col-md-2 col-12 px-0">
+                    <img class="rounded-circle mb-2" src="./images/menu_image_1.jpg">
+                 </div>
+                 <div class="col-md-8 col-12 ">
+                   <h6>Deer Steak with Potatoes</h6>
+                   <p>Welcome to Risotto restaurant website. Here we try to share our</p>
+                 </div>
+                <div class="col-md-2 col-12 px-0">
+                  <span class="alert alert-secondary text-danger text-center prix-menu px-3 py-1 p-1 mx-0">$25</span>
+                </div>
+
+                <div class="col-md-2 col-12 px-0">
                     <img class="rounded-circle mb-2" src="./images/menu_image_1.jpg">
                 </div>
-                <div class="col-8 ">
+                <div class="col-md-8 col-sm-12">
                   <h6>Deer Steak with Potatoes</h6>
                   <p>Welcome to Risotto restaurant website. Here we try to share our</p>
                 </div>
-                <div class="col-2 px-0"><p class="alert alert-secondary p-1 mx-0">$25</p></div>
-                <div class="col-2 px-0">
+                <div class="col-md-2 col-12 px-0">
+                  <span class="alert alert-secondary text-danger text-center prix-menu px-3 py-1 p-1 mx-0">$25</span>
+                </div>
+
+                <div class="col-md-2 col-12 px-0">
                     <img class="rounded-circle mb-2" src="./images/menu_image_1.jpg">
                 </div>
-                <div class="col-8 ">
+                <div class="col-md-8 col-12">
                   <h6>Deer Steak with Potatoes</h6>
                   <p>Welcome to Risotto restaurant website. Here we try to share our</p>
                 </div>
-                <div class="col-2 px-0"><p class="alert alert-secondary p-1 mx-0">$25</p></div>
-                <div class="col-2 px-0">
+                <div class="col-md-2 col-12 px-0">
+                  <span class="alert alert-secondary text-danger text-center prix-menu px-3 py-1 p-1 mx-0">$25</span>
+                </div>
+                
+                <div class="col-md-2 col-12 px-0">
                     <img class="rounded-circle mb-2" src="./images/menu_image_1.jpg">
                 </div>
-                <div class="col-8 ">
+                <div class="col-md-8 col-12">
                   <h6>Deer Steak with Potatoes</h6>
                   <p>Welcome to Risotto restaurant website. Here we try to share our</p>
                 </div>
-                <div class="col-2 px-0"><p class="alert alert-secondary p-1 mx-0">$25</p></div>
-                <div class="col-2 px-0">
-                    <img class="rounded-circle mb-2" src="./images/menu_image_1.jpg">
+                <div class="col-md-2 col-12 px-0">
+                  <span class="alert alert-secondary text-danger text-center prix-menu px-3 py-1 p-1 mx-0">$25</span>
                 </div>
-                <div class="col-8 ">
-                  <h6>Deer Steak with Potatoes</h6>
-                  <p>Welcome to Risotto restaurant website. Here we try to share our</p>
-                </div>
-                <div class="col-2 px-0"><p class="alert alert-secondary p-1 mx-0">$25</p></div>
 
            </div> 
         </div>
                         <!-- la colonne a droite de 5 lignes -->
-        <div class="col">
-            <div class="row m-1 align-items-center">
-                <div class="col-2 px-0">
+        <div class="col-md-5 col-12 mx-0 px-0">
+            <div class="row mx-0 px-0 align-items-center">
+                <div class="col-md-2 col-sm-12 px-0">
                     <img class="rounded-circle mb-2" src="./images/menu_image_1.jpg">
                 </div>
-                <div class="col-8 ">
+                <div class="col-md-8 col-12">
                   <h6>Deer Steak with Potatoes</h6>
                   <p>Welcome to Risotto restaurant website. Here we try to share our</p>
                 </div>
-                <div class="col-2 px-0"><p class="alert alert-secondary p-1 mx-0">$25</p></div>
-                <div class="col-2 px-0">
+                <div class="col-md-2 col-12 px-0">
+                  <span class="alert alert-secondary text-danger text-center prix-menu px-3 py-1 p-1 mx-0">$25</span>
+                </div>
+
+                <div class="col-md-2 col-12 px-0">
                     <img class="rounded-circle mb-2" src="./images/menu_image_1.jpg">
                 </div>
-                <div class="col-8 ">
+                <div class="col-md-8 col-12">
                   <h6>Deer Steak with Potatoes</h6>
                   <p>Welcome to Risotto restaurant website. Here we try to share our</p>
                 </div>
-                <div class="col-2 px-0"><p class="alert alert-secondary p-1 mx-0">$25</p></div>
-                <div class="col-2 px-0">
+                <div class="col-md-2 col-12 px-0">
+                  <span class="alert alert-secondary text-danger text-center prix-menu px-3 py-1 p-1 mx-0">$25</span>
+                </div>
+
+                <div class="col-md-2 col-12 px-0">
                     <img class="rounded-circle mb-2" src="./images/menu_image_1.jpg">
                 </div>
-                <div class="col-8 ">
+                <div class="col-md-8 col-12">
                   <h6>Deer Steak with Potatoes</h6>
                   <p>Welcome to Risotto restaurant website. Here we try to share our</p>
                 </div>
-                <div class="col-2 px-0"><p class="alert alert-secondary p-1 mx-0">$25</p></div>
-                <div class="col-2 px-0">
+                <div class="col-md-2 col-12 px-0">
+                  <span class="alert alert-secondary text-danger text-center prix-menu px-3 py-1 p-1 mx-0">$25</span>
+                </div>
+
+                <div class="col-md-2 col-12 px-0">
                     <img class="rounded-circle mb-2" src="./images/menu_image_1.jpg">
                 </div>
-                <div class="col-8 ">
+                <div class="col-md-8 col-12">
                   <h6>Deer Steak with Potatoes</h6>
                   <p>Welcome to Risotto restaurant website. Here we try to share our</p>
                 </div>
-                <div class="col-2 px-0"><p class="alert alert-secondary p-1 mx-0">$25</p></div>
-                <div class="col-2 px-0">
+                <div class="col-md-2 col-12 px-0">
+                  <span class="alert alert-secondary text-danger text-center prix-menu px-3 py-1 p-1 mx-0">$25</span>
+                </div>
+
+                <div class="col-md-2 col-12 px-0">
                     <img class="rounded-circle mb-2" src="./images/menu_image_1.jpg">
                 </div>
-                <div class="col-8 ">
+                <div class="col-md-8 col-12">
                   <h6>Deer Steak with Potatoes</h6>
                   <p>Welcome to Risotto restaurant website. Here we try to share our</p>
                 </div>
-                <div class="col-2 px-0"><p class="alert alert-secondary p-1 mx-0">$25</p></div>
+                <div class="col-md-2 col-12 px-0">
+                  <span class="alert alert-secondary text-danger text-center prix-menu px-3 py-1 mx-0">$25</span>
+                </div>
 
            </div>
         </div>
@@ -240,19 +329,19 @@
        <img class=" w-75" src="./images/decoration_line.png" alt="">
     </div>
     <div class="row align-self-center">
-      <div class="col-3">
+      <div class="col-12 col-md-3">
         <img class="border-bottom border-secondary" src="./images/chef1.png" alt="">
         <h6>Lorem, ipsum</h6>
       </div>
-      <div class="col-3">
+      <div class="col-12 col-md-3">
         <img class="border-bottom border-secondary" src="./images/chef2.png" alt="">
         <h6>Lorem, ipsum</h6>
       </div>
-      <div class="col-3">
+      <div class="col-12 col-md-3">
         <img class="border-bottom border-secondary" src="./images/chef3.png" alt="">
         <h6>Lorem, ipsum</h6>
       </div>
-      <div class="col-3">
+      <div class="col-12 col-md-3">
         <img class="border-bottom border-secondary" src="./images/chef4.png" alt="">
         <h6>Lorem, ipsum</h6>
       </div>
@@ -303,25 +392,34 @@
    <div class="container px-5 text-center">
       <h1 class="pb-0 mb-0 "><span class="t-grand text-center text-uppercase text-danger">Our </span >Blog</h1>
       <img class=" mb-4 pb-5 " src="./images/decoration_line.png" alt=""> 
-      <div class="row justify-content-center">  
-        <div class="col-5">
+      <div class="row justify-content-center mb-5 py-5">  
+        <div class="col-md-5 col-12 mb-5 blog">
           <img class="w-100" src="./images/blog_img1.jpg" alt="">
-          <p class="bg-danger text-light mx-4 py-3">
-            <span class="">12 </span>April 2017/ <span>20 </span>comment/ <span>30 </span>likes</p>
-          <div class="text-left"> 
-            <h4>Lorem ipsum</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus itaque atque</p> 
-          </div> 
+          <!-- rassembler dans une div -->
+          <div class="marge-negative">
+           <p  class="bg-danger text-light">
+              <span class="txt-special">12 </span>April 2017/ <span class="txt-special">20 </span>comment/ <span class="txt-special">30  </span>likes</p>
+          
+           <div class="text-left mb-5 "> 
+             <h4>Lorem ipsum</h4>
+             <p class="text-left pl-0 ml-0 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus itaque atque</p> 
+           </div> 
+          </div>
         </div>
-        <div class="col-5">
+
+        <div class="col-md-5 col-12 mb-5 blog">
           <img class="w-100" src="./images/blog_img2.jpg" alt="">
-          <p class="bg-danger text-light py-3 mx-4">
-            <span class="">12 </span>April 2017/ <span>20 </span>comment/ <span>30 </span>likes</p></p>
-          <h4 class="text-left">Lorem ipsum</h4>
-          <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus itaque atque</p>  
+          <div class="marge-negative align-self-center">
+             <p class="bg-danger text-light">
+               <span class="txt-special">12 </span>April 2017/ <span class="txt-special">20 </span>comment/ <span class="txt-special">30   </span>likes</p>
+            <div class="text-left mb-5 "> 
+              <h4>Lorem ipsum</h4>
+              <p class="text-left ml-0 pl-0 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus itaque atque</p>  
+            </div>
+          </div>
         </div>
       </div>
-      <button type="submit" class="btn btn-danger pt-3 pb-2 px-4 text-uppercase text-light rounded-pill mt-5">know more</button>
+      <button type="submit" class="btn btn-danger py-3 px-4 text-uppercase text-light rounded-pill mt-5">know more</button>
     </div>
                
       <div class="row">
@@ -332,37 +430,96 @@
   </div>
 </section>
 
-<!-- section client test -->
+<!-- section client testimonial -->
 <section id="client-test">
   <section class="black">
     <div class="text-center p-5 my-4">
      <h1 class=" text-light pt-5"><span class="text-danger text-uppercase t-grand">client</span> Testimonials</h1>
      <img class=" " src="./images/decoration_line.png" alt="">
     </div>
-     <div class="container text-center text-light pl-0">
-        <div class="row pb-5">
-          <div class="col px-0">
-            <img class="border border-secondary rounded-circle w-75" src="./images/testimonial1.jpg" alt="">
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active">
+              <div class="container text-center text-light pl-0">
+                  <div class="row pb-5">
+                    <div class="col px-0">
+                      <img class="image-client" src="./images/testimonial1.jpg" alt="">
+                    </div>
+                    <div class="col text-left testimonial align-self-center pt-3 mr-4">
+                      <h4>Lorem ipsum</h4>
+                      <p class="text-danger">Manager</p>
+                      <p>Lorem, ipsum dolor sit amet cons ectetur adipisicing elit. Velsaepe odit!</p>
+                    </div>
+                    <div class="col text-left testimonial align-self-center pt-3">
+                      <h4>Lorem ipsum</h4>
+                      <p class="text-danger">Manager</p>
+                      <p>Lorem, ipsum dolor sit amet cons ectetur adipisicing elit. Velsaepe odit!</p>
+                    </div>
+                    <div class="col px-0">
+                      <img class="image-client" src="./images/testimonial1.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
           </div>
-          <div class="col text-left testimonial align-self-center pt-3 mr-4">
-            <h4>Lorem ipsum</h4>
-            <p class="text-danger">Manager</p>
-            <p>Lorem, ipsum dolor sit amet cons ectetur adipisicing elit. Velsaepe odit!</p>
+
+          <div class="carousel-item">
+              <div class="container text-center text-light pl-0">
+                  <div class="row pb-5">
+                    <div class="col px-0">
+                      <img class="image-client" src="./images/testimonial1.jpg" alt="">
+                    </div>
+                    <div class="col text-left testimonial align-self-center pt-3 mr-4">
+                      <h4>Lorem ipsum</h4>
+                      <p class="text-danger">Manager</p>
+                      <p>Lorem, ipsum dolor sit amet cons ectetur adipisicing elit. Velsaepe odit!</p>
+                    </div>
+                    <div class="col text-left testimonial align-self-center pt-3">
+                      <h4>Lorem ipsum</h4>
+                      <p class="text-danger">Manager</p>
+                      <p>Lorem, ipsum dolor sit amet cons ectetur adipisicing elit. Velsaepe odit!</p>
+                    </div>
+                    <div class="col px-0">
+                      <img class="image-client" src="./images/testimonial1.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
           </div>
-          <div class="col text-left testimonial align-self-center pt-3">
-            <h4>Lorem ipsum</h4>
-            <p class="text-danger">Manager</p>
-            <p>Lorem, ipsum dolor sit amet cons ectetur adipisicing elit. Velsaepe odit!</p>
+
+          <div class="carousel-item">
+              <div class="container text-center text-light pl-0 ">
+                  <div class="row pb-5">
+                    <div class="col px-0">
+                      <img class="image-client" src="./images/testimonial1.jpg" alt="">
+                    </div>
+                    <div class="col text-left testimonial align-self-center pt-3 mr-4">
+                      <h4>Lorem ipsum</h4>
+                      <p class="text-danger">Manager</p>
+                      <p>Lorem, ipsum dolor sit amet cons ectetur adipisicing elit. Velsaepe odit!</p>
+                    </div>
+                    <div class="col text-left testimonial align-self-center pt-3">
+                      <h4>Lorem ipsum</h4>
+                      <p class="text-danger">Manager</p>
+                      <p>Lorem, ipsum dolor sit amet cons ectetur adipisicing elit. Velsaepe odit!</p>
+                    </div>
+                    <div class="col px-0">
+                      <img class="image-client" src="./images/testimonial1.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
           </div>
-          <div class="col px-0">
-            <img class="border border-secondary rounded-circle w-75" src="./images/testimonial1.jpg" alt="">
-          </div>
+
         </div>
-      </div>
+  </div>
+
+
+
+     
    </section>
 </section>
 <!-- section contact -->
-<section class="conatiner text-center align-self-center">
+<section class="container text-center align-self-center">
   
     <h1 class="text dark text-center pt-5"><span class="text-danger text-uppercase t-grand">our</span> Contact</h1>
     <img class="text-center " src="./images/decoration_line.png" alt="">
@@ -382,5 +539,66 @@
     </div>
     
 </section>
+
+<footer class="pt-0">
+  <div id="deco-top"></div>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 col-12">
+        <h2 class="text-light text-uppercase m5-5 pt-5">about us</h2>
+        <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, architecto! Veritatis enim neque commodi qui busdam? Nam dolor itaque corrupti illum, earum qui inventore commodi animi illo id ex...............</p>
+        <a href="#"><i  class="fab fa-facebook-f fa-lg text-light"></i></a>
+        <a  href="#"><i  class="fab fa-google-plus-g fa-lg ml-4 text-light"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p fa-lg ml-4 text-light"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in fa-lg ml-4 text-light"></i></a>
+      </div>
+
+      <div class="col-md-4 col-12">
+        <h2 class="text-light text-uppercase mb-5 pt-5">instagram</h2>
+        <div class="row no-gutters">
+          <div class="col"><img src="./images/instragram_gallery_img1.jpg" alt=""></div>
+          <div class="col"><img src="./images/instragram_gallery_img2.jpg" alt=""></div>
+          <div class="col"><img src="./images/instragram_gallery_img1.jpg" alt=""></div>
+          <div class="col"><img src="./images/instragram_gallery_img2.jpg" alt=""></div>
+        </div>
+        <div class="row no-gutters mt-3">
+          <div class="col"><img src="./images/instragram_gallery_img2.jpg" alt=""></div>
+          <div class="col"><img src="./images/instragram_gallery_img1.jpg" alt=""></div>
+          <div class="col"><img src="./images/instragram_gallery_img2.jpg" alt=""></div>
+          <div class="col"><img src="./images/instragram_gallery_img1.jpg" alt=""></div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-12 pr-0 pt-5">
+        <h2 class="text-light text-uppercase mb-5">popular tags</h2>
+        <div class="row">
+          <div class="col align-items-center">
+            <h6 class="mt-2"><span>restaurant</span><span class="mx-2">responsive design</span><span>hotel</span></h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col ">
+            <h6 class="mt-4"><span>blog section</span><span class="mx-2">SEO</span><span>cuisine</span></h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h6 class="mt-4"><span>blog section</span><span class="mx-1">SEO</span><span>cuisine</span></h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+<section class="p-5 bg-danger"></section>
+
+ <script>
+    function myFunction() {
+      document.getElementById("change").style.color = "#d90035";
+    }
+ </script>
 </body>
 </html> 

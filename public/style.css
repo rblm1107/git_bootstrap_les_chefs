@@ -9526,16 +9526,37 @@ h3 {
     border-color: #dee2e6;
   }
 }
+@font-face {
+  font-family: "Courge";
+  src: url("../public/font/Courgette-Regular.ttf");
+}
 h1 {
-  font-family: "Courgette", cursive;
+  font-family: "Courge";
 }
 
 body {
   background: url("../images/main_bg.jpg");
+  border: 1px solid black;
+  margin-left: 0;
+}
+
+.txt-special {
+  font-size: 25px;
+  font-weight: 630;
+}
+
+.t-grand {
+  font-size: 55px;
+}
+
+.prix-menu {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 header {
   background-image: url("../images/banner1.jpg");
+  background-position-y: 40%;
   width: 100%;
   background-size: cover;
   margin-bottom: 0;
@@ -9547,14 +9568,19 @@ nav a {
   text-transform: uppercase;
   font-size: 15px;
 }
+nav a:hover {
+  width: 100px;
+  height: 40px;
+  margin: 0px;
+  padding: 0;
+  background-color: #d91133;
+  display: block;
+}
 
 .banner {
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
-}
-
-.t-grand {
-  font-size: 55px;
+  height: 700px;
 }
 
 #deco {
@@ -9564,8 +9590,31 @@ nav a {
   width: 100%;
 }
 
-#border-bordeau {
-  border-right: 5px solid #a02;
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+  border: 3px solid #bbb;
+}
+
+.list-group-item {
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.list-group-item i {
+  color: #ccc;
+}
+
+.list-group-item.active {
+  background-color: #fff !important;
+  border-right: 5px solid #b02 !important;
+  color: #000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: none;
+}
+.list-group-item.active i {
+  color: #b02 !important;
 }
 
 .menu .container {
@@ -9577,14 +9626,16 @@ nav a {
   height: 70px;
 }
 .menu p {
-  font-size: 12px;
+  font-size: 14px;
 }
 .menu h6 {
-  font-size: 12px;
-  font-weight: 750;
+  font-size: 15px;
+  font-weight: 650;
+  padding-top: 10px;
 }
 .menu h3 {
   font-family: "Courgette", cursive;
+  color: #000;
 }
 
 .col-8 {
@@ -9615,13 +9666,19 @@ input, select {
   padding-bottom: 20px !important;
 }
 
-.col-5 img {
-  border: 5px solid #BBB;
-  border-radius: 20px;
+.blog .marge-negative {
+  margin: -20px 40px 0 30px;
+  position: absolute;
 }
-.col-5 p {
+.blog img {
+  border: 5px solid #BBB !important;
+  border-radius: 20px !important;
+}
+.blog p {
   border-radius: 10px;
   font-size: 13px;
+  padding: 8px 20px;
+  margin-bottom: 20%;
 }
 
 #client-test {
@@ -9644,14 +9701,140 @@ input, select {
   color: rgba(250, 250, 250, 0.7);
 }
 
+.image-client {
+  border: 3px solid #aaa;
+  border-radius: 100%;
+  width: 57%;
+}
+
 #contact {
-  width: 30%;
+  width: 33%;
   padding: 10px;
   color: #fff;
   text-align: center;
   border-radius: 20px;
-  margin-left: 35%;
-  margin-top: 5%;
+  margin: 5% auto;
+  display: inline-block;
+}
+
+footer {
+  background-image: url("../images/footer_background.jpg");
+  background-position-x: 30%;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 5% 0;
+}
+footer p {
+  font-size: 14px;
+}
+footer span {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  background-color: rgba(220, 0, 35, 0.8);
+  padding: 8px 15px;
+  text-transform: capitalize;
+  border-radius: 20px;
+}
+
+#deco-top {
+  background-image: url("../images/footer_bottom_decoration_img.png");
+  height: 15px;
+  width: 100%;
+}
+
+@media (max-width: 575px) {
+  .txt-special {
+    font-size: 8px;
+    font-weight: 400;
+  }
+
+  .t-grand {
+    font-size: 15px;
+  }
+
+  .prix-menu {
+    font-size: 9px;
+    font-weight: 400;
+  }
+
+  .menu .container {
+    background-color: #0d0;
+  }
+}
+@media (min-width: 576px) and (max-width: 700px) {
+  .txt-special {
+    font-size: 11px;
+    font-weight: 500;
+  }
+
+  .t-grand {
+    font-size: 20px;
+  }
+
+  .prix-menu {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .menu .container {
+    background-color: #fd0;
+  }
+}
+@media (min-width: 701px) and (max-width: 991.98px) {
+  .txt-special {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .t-grand {
+    font-size: 30px;
+  }
+
+  .prix-menu {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .menu .container {
+    background-color: #f00;
+  }
+}
+@media (min-width: 992px) and (max-width: 1009px) {
+  .txt-special {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .t-grand {
+    font-size: 40px;
+  }
+
+  .prix-menu {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .menu .container {
+    background-color: #f0f;
+  }
+}
+@media (min-width: 1010px) and (max-width: 1200px) {
+  .menu .container {
+    background-color: #0dd;
+  }
+
+  .txt-special {
+    font-size: 25px;
+    font-weight: 630;
+  }
+
+  .t-grand {
+    font-size: 55px;
+  }
+
+  .prix-menu {
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
