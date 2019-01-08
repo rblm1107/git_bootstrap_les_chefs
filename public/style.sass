@@ -3,6 +3,9 @@
 @font-face
     font-family: 'Courge'
     src: url('../public/font/Courgette-Regular.ttf')
+    $color-gris: #aaa 
+    $color-blanc: #fff
+    $color-danger: #b02
 
 // pour tout de body
 h1 
@@ -29,7 +32,7 @@ header
     padding-bottom: 0
 nav 
      a 
-       color: #fff 
+       color: #fff !important
        text-transform: uppercase 
        font-size: 15px 
        &:hover 
@@ -37,7 +40,7 @@ nav
          height: 40px
          margin: 0px
          padding: 0
-         background-color: #d91133
+         background-color: #b02
          display: block
 .banner 
     background-color: rgba(0,0,0, 0.8)
@@ -55,13 +58,21 @@ nav
     border-radius: 15px
     border: 3px solid #bbb
 // fin de header
+
 // la section menu
+.nav-pills .nav-link.active
+    background-color: #fff 
+    border-right: 5px solid #b02 !important
+    color: #b02
+    border-bottom: 1px solid rgba(0,0,0, 0.1)
+    border-top: none  
+
 .list-group-item
     border-left: none !important
     border-right: none !important
     border-bottom: 1px solid rgba(0,0,0, 0.1)
     i 
-        color: #ccc
+        color: #ccc !important
 .list-group-item.active
     background-color: #fff !important
     border-right: 5px solid #b02 !important
@@ -71,6 +82,8 @@ nav
     i 
         color: #b02 !important
 .menu
+    a 
+        color: #aaa
     .container
         background-color: #fff
     .rounded-circle
@@ -86,10 +99,8 @@ nav
     h3 
         font-family: 'Courgette', cursive
         color: #000
-.col-8
+.col-md-8
       border-bottom: 1px dotted #aaa
-      padding-top: 15px
-      padding-bottom: 15px
 //section chef      
 #chef
     margin-top: 50px
@@ -180,9 +191,7 @@ footer
     .prix-menu
         font-size: 9px
         font-weight: 400   
-    .menu
-       .container
-            background-color: #0d0  
+
 // ecran sm
 @media (min-width: 576px) and (max-width: 700px)
     .txt-special
@@ -193,9 +202,7 @@ footer
     .prix-menu
         font-size: 12px
         font-weight: 400   
-    .menu
-       .container
-            background-color: #fd0  
+
 // Medium screen
 @media (min-width: 701px) and (max-width: 991.98px)
     .txt-special
@@ -206,9 +213,7 @@ footer
     .prix-menu
         font-size: 13px
         font-weight: 400   
-    .menu
-       .container
-            background-color: #f00  
+
 // Large ecran
 @media (min-width: 992px) and (max-width: 1009px)
     .txt-special
@@ -219,14 +224,9 @@ footer
     .prix-menu
         font-size: 15px
         font-weight: 500   
-    .menu
-       .container
-            background-color: #f0f  
+ 
 // Extra large screen 
 @media (min-width: 1010px) and (max-width: 1200px)
-    .menu
-       .container
-          background-color: #0dd 
     .txt-special
         font-size: 25px
         font-weight: 630

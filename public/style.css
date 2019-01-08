@@ -9564,7 +9564,7 @@ header {
 }
 
 nav a {
-  color: #fff;
+  color: #fff !important;
   text-transform: uppercase;
   font-size: 15px;
 }
@@ -9573,7 +9573,7 @@ nav a:hover {
   height: 40px;
   margin: 0px;
   padding: 0;
-  background-color: #d91133;
+  background-color: #b02;
   display: block;
 }
 
@@ -9597,13 +9597,21 @@ nav a:hover {
   border: 3px solid #bbb;
 }
 
+.nav-pills .nav-link.active {
+  background-color: #fff;
+  border-right: 5px solid #b02 !important;
+  color: #b02;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: none;
+}
+
 .list-group-item {
   border-left: none !important;
   border-right: none !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .list-group-item i {
-  color: #ccc;
+  color: #ccc !important;
 }
 
 .list-group-item.active {
@@ -9617,6 +9625,9 @@ nav a:hover {
   color: #b02 !important;
 }
 
+.menu a {
+  color: #aaa;
+}
 .menu .container {
   background-color: #fff;
 }
@@ -9638,10 +9649,8 @@ nav a:hover {
   color: #000;
 }
 
-.col-8 {
+.col-md-8 {
   border-bottom: 1px dotted #aaa;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 #chef {
@@ -9755,10 +9764,6 @@ footer span {
     font-size: 9px;
     font-weight: 400;
   }
-
-  .menu .container {
-    background-color: #0d0;
-  }
 }
 @media (min-width: 576px) and (max-width: 700px) {
   .txt-special {
@@ -9773,10 +9778,6 @@ footer span {
   .prix-menu {
     font-size: 12px;
     font-weight: 400;
-  }
-
-  .menu .container {
-    background-color: #fd0;
   }
 }
 @media (min-width: 701px) and (max-width: 991.98px) {
@@ -9793,10 +9794,6 @@ footer span {
     font-size: 13px;
     font-weight: 400;
   }
-
-  .menu .container {
-    background-color: #f00;
-  }
 }
 @media (min-width: 992px) and (max-width: 1009px) {
   .txt-special {
@@ -9812,16 +9809,8 @@ footer span {
     font-size: 15px;
     font-weight: 500;
   }
-
-  .menu .container {
-    background-color: #f0f;
-  }
 }
 @media (min-width: 1010px) and (max-width: 1200px) {
-  .menu .container {
-    background-color: #0dd;
-  }
-
   .txt-special {
     font-size: 25px;
     font-weight: 630;
